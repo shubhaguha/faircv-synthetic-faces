@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "faircv-synth"
+version = "0.1.0"
+description = "Synthetic, demographically controlled headshots for FairCV resumes"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "pillow"]
+
+[project.optional-dependencies]
+gen = ["torch", "diffusers>=0.27", "transformers", "accelerate", "safetensors"]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["faircv_synth"]

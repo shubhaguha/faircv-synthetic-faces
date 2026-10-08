@@ -1,0 +1,9 @@
+numpy
+pandas
+pillow
+torch
+diffusers>=0.27
+transformers
+accelerate
+safetensors
+pytest
